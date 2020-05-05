@@ -1,0 +1,182 @@
+// ****全デバイス共通モバイル用****
+
+body{
+  width: 100%;
+  font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+// ------ header ------
+header{
+  text-align: center;
+
+  h1{
+    width: 90%;
+    margin: 0 auto;
+    height: 46px;
+    background: #fcf;
+  }
+
+  .s_nav{
+
+  }
+  img{
+    width: 100%;
+    max-width: 960px;
+  }
+}
+
+// ------ global nav ------
+nav{
+  
+  ul{
+    background: #fcf;
+    width: 100%;
+    line-height: 50px;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+
+  }
+}
+
+// ------ contents ------
+
+.contents{
+  margin-top: 30px;
+
+  // ------ main ------
+  main{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+
+  // ------ article ------
+  .contents__item{
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+
+    h2{
+      font-size: 1.8rem;
+      margin: 0 5px 15px 0;
+      padding-bottom: 10px;
+    }
+
+    img{
+      display: block;
+      width: 95%;
+      padding: 2px;
+      border: solid 1px #000;
+      border-radius: 2px;
+      margin: 0 auto 20px;
+
+    }
+    
+    p{
+      width: 95%;
+      height: 200px;
+      margin: 0 auto;
+      background: #fcf;
+    }
+
+  }
+}
+
+
+// ------ aside ------
+aside{
+  width: 300px;
+  margin: 20px auto 60px;
+
+  // ------ information ------
+  .info{
+    border: solid 1px #000;
+    border-radius: 7px;
+
+    &__sns{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 10px 5px 0 ;
+      li{
+        margin: 0 5px;
+      }
+    }
+
+    &__guide{
+      margin: 10px 5px 0;
+      background: #fcf;
+
+      li{
+        height: 65px;
+        padding: 10px 0 5px;
+        border-top: solid 1px #000;
+      }
+    }
+  }
+  
+  // ------ topics ------
+  .topics{
+    background: #fcf;
+
+    h3{
+      font-size: 1.5rem;
+      margin: 30px 0 20px;
+    }
+
+    &__diary{
+
+      li{
+        margin: 0 0 15px 5px;
+        padding-bottom: 5px;
+        border-bottom: solid 1px #000;
+        background: #f3f;
+      }
+    }
+  }
+}
+
+// ------ news ------
+.news{
+  width: 93%;
+  margin: 0 auto;
+
+  h2{
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: solid 1px #000;
+  }
+
+  &__item{
+    margin-bottom: 40px;
+
+    h3{
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+    }
+    
+    p{
+      height: 100px;
+      background: #fcf;
+    }
+  }
+}
+
+// ------ footer ------
+footer{
+  text-align: center;
+  border-top: solid 10px #000;
+}
+
+// ****タブレット用****
+@media screen and (min-width: 768px){
+
+}
+  
+// ****PC用****
+@media screen and (min-width: 960px){
+  
+}

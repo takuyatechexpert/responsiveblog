@@ -1,0 +1,301 @@
+@charset "UTF-8";
+
+/*!
+ * YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
+ * http://cssreset.com
+ * Copyright 2012 Yahoo! Inc. All rights reserved.
+ * http://yuilibrary.com/license/
+ */
+
+/*
+    TODO will need to remove settings on HTML since we can't namespace it.
+    TODO with the prefix, should I group by selector or property for weight savings?
+*/
+
+html {
+  color: #000;
+  background: #FFF;
+}
+
+/*
+  TODO remove settings on BODY since we can't namespace it.
+*/
+
+/*
+  TODO test putting a class on HEAD.
+      - Fails on FF.
+*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+/*
+  TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: "";
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* to preserve line-height and selector appearance */
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*to enable resizing for IE*/
+
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+
+/*because legend doesn't inherit in IE */
+
+legend {
+  color: #000;
+}
+
+/* YUI CSS Detection Stamp */
+
+#yui3-css-stamp.cssreset {
+  display: none;
+}
+
+body {
+  width: 100%;
+  font-family: "Lato", "Noto Sans JP", "\30D2\30E9\30AE\30CE\89D2\30B4   ProN", "Hiragino Kaku Gothic ProN", "\30E1\30A4\30EA\30AA", Meiryo, "\FF2D\FF33   \FF30\30B4\30B7\30C3\30AF", "MS PGothic", sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  width: 90%;
+  margin: 0 auto;
+  height: 46px;
+  background: #fcf;
+}
+
+header img {
+  width: 100%;
+  max-width: 960px;
+}
+
+nav ul {
+  background: #fcf;
+  width: 100%;
+  line-height: 50px;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.contents {
+  margin-top: 30px;
+}
+
+.contents main {
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.contents .contents__item {
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.contents .contents__item h2 {
+  font-size: 1.8rem;
+  margin: 0 5px 15px 0;
+  padding-bottom: 10px;
+}
+
+.contents .contents__item img {
+  display: block;
+  width: 95%;
+  padding: 2px;
+  border: solid 1px #000;
+  border-radius: 2px;
+  margin: 0 auto 20px;
+}
+
+.contents .contents__item p {
+  width: 95%;
+  height: 200px;
+  margin: 0 auto;
+  background: #fcf;
+}
+
+aside {
+  width: 300px;
+  margin: 20px auto 60px;
+}
+
+aside .info {
+  border: solid 1px #000;
+  border-radius: 7px;
+}
+
+aside .info__sns {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px 5px 0;
+}
+
+aside .info__sns li {
+  margin: 0 5px;
+}
+
+aside .info__guide {
+  margin: 10px 5px 0;
+  background: #fcf;
+}
+
+aside .info__guide li {
+  height: 65px;
+  padding: 10px 0 5px;
+  border-top: solid 1px #000;
+}
+
+aside .topics {
+  background: #fcf;
+}
+
+aside .topics h3 {
+  font-size: 1.5rem;
+  margin: 30px 0 20px;
+}
+
+aside .topics__diary li {
+  margin: 0 0 15px 5px;
+  padding-bottom: 5px;
+  border-bottom: solid 1px #000;
+  background: #f3f;
+}
+
+.news {
+  width: 93%;
+  margin: 0 auto;
+}
+
+.news h2 {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  border-bottom: solid 1px #000;
+}
+
+.news__item {
+  margin-bottom: 40px;
+}
+
+.news__item h3 {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.news__item p {
+  height: 100px;
+  background: #fcf;
+}
+
+footer {
+  text-align: center;
+  border-top: solid 10px #000;
+}
+
