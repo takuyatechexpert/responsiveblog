@@ -15,7 +15,7 @@ header{
     width: 90%;
     margin: 0 auto;
     height: 46px;
-    background: #fcf;
+    font-size: 2rem;
   }
 
   img{
@@ -28,13 +28,18 @@ header{
 nav{
   
   ul{
-    background: #fcf;
+    background: #808080;
+    color: #fff;
+    font-size: 1.1rem;
     width: 100%;
     line-height: 50px;
     max-width: 960px;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    
+    li{
+      padding: 0 20px;
+    }
   }
 }
 
@@ -75,7 +80,6 @@ nav{
         width: 95%;
         height: 200px;
         margin: 0 auto;
-        background: #fcf;
       }
     }
     
@@ -107,7 +111,6 @@ aside{
 
     &__guide{
       margin: 10px 5px 0;
-      background: #fcf;
 
       li{
         height: 65px;
@@ -119,11 +122,12 @@ aside{
   
   // ------ topics ------
   .topics{
-    background: #fcf;
 
     h3{
       font-size: 1.5rem;
       margin: 30px 0 20px;
+      background: linear-gradient(#fff 50%, #808080);
+
     }
 
     &__diary{
@@ -132,7 +136,6 @@ aside{
         margin: 0 0 15px 5px;
         padding-bottom: 5px;
         border-bottom: solid 1px #000;
-        background: #f3f;
       }
     }
   }
@@ -147,7 +150,7 @@ aside{
     font-size: 1.5rem;
     padding-bottom: 10px;
     margin-bottom: 30px;
-    border-bottom: solid 1px #000;
+    background: linear-gradient(#fff 50%, #808080);
   }
 
   &__item{
@@ -160,15 +163,19 @@ aside{
     
     p{
       height: 100px;
-      background: #fcf;
     }
   }
 }
 
 // ------ footer ------
 footer{
+  background: #000;
+  color: #fff;
+  height: 50px;
+  max-width: 960px;
   text-align: center;
-  border-top: solid 10px #000;
+  line-height: 50px;
+  margin: 0 auto;
 }
 
 // ****タブレット用****
@@ -183,7 +190,7 @@ footer{
       h1{
         text-align: left;
         margin: 0;
-        padding: 15px 5px 7px 5px;
+        padding: 15px 5px 7px 15px;
         width: 50%;
       }
       
@@ -202,9 +209,7 @@ footer{
 
 // ------ global nav ------
   nav{
-    border-bottom: solid 1px #000;
     margin: 10px auto 15px;
-    
   }
   
   // ------ contents ------
