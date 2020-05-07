@@ -3,25 +3,24 @@
 @section('content')
 {{-- container --}}
 <div class="container">
-  container
 </div>
-
-{{-- header --}}
-<header>
-  <div class="header__top">
-    <h1>
-      header
-    </h1>
-    <ul class="s_nav">
-      <li>contact</li>
-    </ul>
-  </div>
-  <img src="{{ asset('/images/header.jpg') }}" alt="header">
-</header>
-
-{{-- global nav --}}
-<nav>
-  <ul>
+  
+  {{-- header --}}
+  <header>
+    <div class="header__top">
+      <h1>
+        ResponsiveBlog
+      </h1>
+      <ul class="s_nav">
+        <li>contact</li>
+      </ul>
+    </div>
+    <img src="{{ asset('/images/header.jpg') }}" alt="header">
+  </header>
+  
+  {{-- global nav --}}
+  <nav>
+    <ul>
     <li>nav bar</li>
     <li>genre1</li>
     <li>genre2</li>
@@ -35,8 +34,6 @@
   
     {{-- main --}}
     <main>
-      main page
-      
       {{-- article --}}
       <article class="contents__item">
         <h2>title</h2>
