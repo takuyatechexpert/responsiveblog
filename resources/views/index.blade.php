@@ -32,7 +32,6 @@
 
 {{-- contents --}}
 <div class="contents">
-  contents
   
     {{-- main --}}
     <main>
@@ -68,6 +67,22 @@
           </li>
           <li>
             <p>guide2</p>
+            <p>guide1</p>
+          </li>
+          <li>
+            <p>guide3</p>
+            <p>guide1</p>
+          </li>
+          <li>
+            <p>guide3</p>
+            <p>guide1</p>
+          </li>
+          <li>
+            <p>guide3</p>
+            <p>guide1</p>
+          </li>
+          <li>
+            <p>guide3</p>
             <p>guide1</p>
           </li>
           <li>
@@ -110,8 +125,8 @@
         <p>news text</p>
       </article>
     </section>
+  </div>
   
-</div>
 {{-- footer --}}
 <footer>
   Copyright &copy; 2020 ResponsiveBlog All Rights Reserved.

@@ -229,7 +229,6 @@ aside {
 aside .info {
   border: solid 1px #000;
   border-radius: 7px;
-  height: 100%;
 }
 
 aside .info__sns {
@@ -351,12 +350,54 @@ footer {
   }
 
   aside .topics {
-    height: 100%;
     width: 300px;
   }
 
   aside .topics h3 {
     margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  nav,
+  header {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .contents {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contents main {
+    width: 64%;
+  }
+
+  .contents aside {
+    width: 30%;
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    margin-bottom: 0;
+    top: 10px;
+    z-index: 1;
+  }
+
+  .contents aside .info {
+    width: 300px;
+  }
+
+  .contents aside .topics {
+    width: 300px;
+    margin: 10px;
+  }
+
+  .contents .news {
+    width: 64%;
+    margin-left: 0;
   }
 }
 
