@@ -52,7 +52,7 @@
       {{-- information --}}
       <section class="info">
         <ul class="info__sns">
-          <li>Twitter</li>
+          <li class="fas fa-air-freshener"></li>
           <li>Facebook</li>
           <li>LINE</li>
         </ul>
