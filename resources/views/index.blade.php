@@ -8,12 +8,14 @@
 
 {{-- header --}}
 <header>
-  <h1>
-    header
-  </h1>
-  <ul class="s_nav">
-    <li>contact</li>
-  </ul>
+  <div class="header__top">
+    <h1>
+      header
+    </h1>
+    <ul class="s_nav">
+      <li>contact</li>
+    </ul>
+  </div>
   <img src="{{ asset('/images/header.jpg') }}" alt="header">
 </header>
 
@@ -39,11 +41,13 @@
       {{-- article --}}
       <article class="contents__item">
         <h2>title</h2>
-        <img src="{{ asset('/images/sample.jpg') }}" alt="イメージ写真">
-        <p>
-          article
-          testmessage
-        </p>
+        <div class="contents__item__box">
+          <img src="{{ asset('/images/sample.jpg') }}" alt="イメージ写真">
+          <p>
+            article
+            testmessage
+          </p>
+        </div>
       </article>
     </main>
     
