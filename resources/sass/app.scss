@@ -1,4 +1,13 @@
-//
+//reset css
 @import 'reset';
+// Font Awesome
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/brands';
 
 @import 'index';
+
+* {
+  box-sizing: border-box;
+}
