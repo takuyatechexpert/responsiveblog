@@ -6244,10 +6244,17 @@ nav ul {
   max-width: 960px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
 }
 
 nav ul li {
-  padding: 0 20px;
+  text-align: center;
+  width: 50%;
+  border-bottom: solid 1px #e4e4e4;
+}
+
+nav ul li:nth-child(odd) {
+  border-right: solid 1px #e4e4e4;
 }
 
 .contents {
@@ -6292,7 +6299,7 @@ aside {
 }
 
 aside .info {
-  border: solid 1px #000;
+  border: solid 1px #808080;
   border-radius: 7px;
 }
 
@@ -6314,7 +6321,16 @@ aside .info__guide {
 aside .info__guide li {
   height: 65px;
   padding: 10px 0 5px;
-  border-top: solid 1px #000;
+  border-top: solid 1px #808080;
+  display: flex;
+}
+
+aside .info__guide li img {
+  width: 80px;
+}
+
+aside .info__guide li .info__guide__text {
+  margin-left: 10px;
 }
 
 aside .topics h3 {
@@ -6326,7 +6342,7 @@ aside .topics h3 {
 aside .topics__diary li {
   margin: 0 0 15px 5px;
   padding-bottom: 5px;
-  border-bottom: solid 1px #000;
+  border-bottom: solid 1px #808080;
 }
 
 .news {
@@ -6336,7 +6352,6 @@ aside .topics__diary li {
 
 .news h2 {
   font-size: 1.5rem;
-  padding-bottom: 10px;
   margin-bottom: 30px;
   background: linear-gradient(#fff 50%, #808080);
 }
@@ -6387,6 +6402,21 @@ footer {
 
   nav {
     margin: 10px auto 15px;
+  }
+
+  nav ul {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    width: 16.66%;
+    text-align: center;
+    border-bottom: none;
+    border-left: solid 0.5px #e4e4e4;
+    border-right: solid 0.5px #e4e4e4;
   }
 
   .contents main .contents__item .contents__item__box {
@@ -6462,5 +6492,9 @@ footer {
     width: 64%;
     margin-left: 0;
   }
+}
+
+* {
+  box-sizing: border-box;
 }
 

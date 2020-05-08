@@ -21,11 +21,12 @@
   {{-- global nav --}}
   <nav>
     <ul>
-    <li>nav bar</li>
+    <li>プログラミング</li>
     <li>genre1</li>
     <li>genre2</li>
     <li>genre3</li>
     <li>genre4</li>
+    <li>genre5</li>
   </ul>
 </nav>
 
@@ -42,7 +43,7 @@
           <p>
             article
             testmessage
-          </p>
+          </p><tr></tr>
         </div>
       </article>
     </main>
@@ -52,39 +53,39 @@
       {{-- information --}}
       <section class="info">
         <ul class="info__sns">
-          <li class="fas fa-air-freshener"></li>
-          <li>Facebook</li>
-          <li>LINE</li>
+          <li class="fab fa-twitter fa-3x"></li>
+          <li class="fab fa-facebook-f fa-3x"></li>
+          <li class="fab fa-line fa-3x"></li>
         </ul>
 
         <ul class="info__guide">
           <li>
-            <p>guide1</p>
-            <p>guide1</p>
+            <img src="{{ asset('/images/sample.jpg') }}" alt="イメージ写真">
+            <div class="info__guide__text">
+              <p>guide1</p>
+              <p>guide1</p>
+            </div>
           </li>
           <li>
-            <p>guide2</p>
-            <p>guide1</p>
+            <img src="{{ asset('/images/sample.jpg') }}" alt="イメージ写真">
+            <div class="info__guide__text">
+              <p>guide1</p>
+              <p>guide1</p>
+            </div>
           </li>
           <li>
-            <p>guide3</p>
-            <p>guide1</p>
+            <img src="{{ asset('/images/sample.jpg') }}" alt="イメージ写真">
+            <div class="info__guide__text">
+              <p>guide1</p>
+              <p>guide1</p>
+            </div>
           </li>
           <li>
-            <p>guide3</p>
-            <p>guide1</p>
-          </li>
-          <li>
-            <p>guide3</p>
-            <p>guide1</p>
-          </li>
-          <li>
-            <p>guide3</p>
-            <p>guide1</p>
-          </li>
-          <li>
-            <p>guide3</p>
-            <p>guide1</p>
+            <img src="{{ asset('/images/sample.jpg') }}" alt="イメージ写真">
+            <div class="info__guide__text">
+              <p>guide1</p>
+              <p>guide1</p>
+            </div>
           </li>
         </ul>
       </section>

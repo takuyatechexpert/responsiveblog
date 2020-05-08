@@ -36,9 +36,16 @@ nav{
     max-width: 960px;
     margin: 0 auto;
     display: flex;
-    
+    flex-wrap: wrap;
+
     li{
-      padding: 0 20px;
+      text-align: center;
+      width: 50%;
+      border-bottom: solid 1px #e4e4e4;
+    }
+    li:nth-child(odd){
+      border-right: solid 1px #e4e4e4;
+
     }
   }
 }
@@ -95,7 +102,7 @@ aside{
 
   // ------ information ------
   .info{
-    border: solid 1px #000;
+    border: solid 1px #808080;
     border-radius: 7px;
     // height: 100%;
 
@@ -115,7 +122,16 @@ aside{
       li{
         height: 65px;
         padding: 10px 0 5px;
-        border-top: solid 1px #000;
+        border-top: solid 1px #808080;
+        display: flex;
+
+        img{
+          width: 80px;
+        }
+
+        .info__guide__text{
+          margin-left: 10px;
+        }
       }
     }
   }
@@ -135,7 +151,7 @@ aside{
       li{
         margin: 0 0 15px 5px;
         padding-bottom: 5px;
-        border-bottom: solid 1px #000;
+        border-bottom: solid 1px #808080;
       }
     }
   }
@@ -148,7 +164,6 @@ aside{
 
   h2{
     font-size: 1.5rem;
-    padding-bottom: 10px;
     margin-bottom: 30px;
     background: linear-gradient(#fff 50%, #808080);
   }
@@ -210,6 +225,22 @@ footer{
 // ------ global nav ------
   nav{
     margin: 10px auto 15px;
+
+    ul{
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      
+      li{
+        width: 16.66%;
+        text-align: center;
+        border-bottom: none;
+        border-left: solid 0.5px #e4e4e4;
+        border-right: solid 0.5px #e4e4e4;
+      }
+    }
+  
   }
   
   // ------ contents ------
