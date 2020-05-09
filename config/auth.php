@@ -46,6 +46,10 @@ return [
             'provider' => 'users',
             'hash' => false,
         ],
+        'user' => [ //追加
+            'driver' => 'session', //追加
+            'provider' => 'users', //追加
+        ],
         'admin' => [ //追加
             'driver' => 'session', //追加
             'provider' => 'admins', //追加
@@ -72,11 +76,11 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\User::class,
+            'model' => App\Models\User::class,
         ],
         'admins' => [ //追加
             'driver' => 'eloquent', //追加
-            'model' => App\Admin::class, //追加
+            'model' => App\Models\Admin::class, //追加
         ],
 
         // 'users' => [

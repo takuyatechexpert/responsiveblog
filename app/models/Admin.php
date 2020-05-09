@@ -1,10 +1,14 @@
 <?php
 
-namespace App\models;
+namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
+// use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Admin extends Model
+// class Admin extends Model
+class Admin extends Authenticatable
+// ここの記述を変更忘れしていたのでloginが上手くいかなかった
 {
     //
     use Notifiable;
