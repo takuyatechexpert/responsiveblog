@@ -14,8 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('welcome');
 });
+
+Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');
+
 /*
 |--------------------------------------------------------------------------
 | 1) User 認証不要

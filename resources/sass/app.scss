@@ -1,13 +1,8 @@
-//reset css
-@import 'reset';
-// Font Awesome
-@import '~@fortawesome/fontawesome-free/scss/fontawesome';
-@import '~@fortawesome/fontawesome-free/scss/solid';
-@import '~@fortawesome/fontawesome-free/scss/regular';
-@import '~@fortawesome/fontawesome-free/scss/brands';
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 
-@import 'index';
+// Variables
+@import 'variables';
 
-* {
-  box-sizing: border-box;
-}
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
