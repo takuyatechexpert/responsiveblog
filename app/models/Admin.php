@@ -1,13 +1,16 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+// use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+// class Admin extends Model
+class Admin extends Authenticatable
+// ここの記述を変更忘れしていたのでloginが上手くいかなかった
 {
+    //
     use Notifiable;
 
     /**
@@ -36,4 +39,5 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
 }
