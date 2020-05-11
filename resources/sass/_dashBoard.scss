@@ -1,0 +1,51 @@
+.admin__header{
+
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 0;
+
+    &--title{
+      font-size: 1.5rem;
+    }
+    &--user{
+      font-size: 1.2rem;
+      padding-top: 15px;
+    }
+  }
+}
+
+.admin__nav{
+  a{
+    color: #fff;
+  }
+}
+
+.admin__main{
+
+  &__title{
+    font-size: 1.5rem;
+    padding: 10px;
+
+  }
+  &__form{
+    text-align: center;
+
+    &--textArea{
+      border: solid 1px #000;
+    }
+
+    &--submit{
+      display: block;
+      margin: 0 auto;
+      background: #e4e4e4;
+      color: #fff;
+      font-size: 1.5rem;
+      letter-spacing: 5px;
+      padding: 5px 30px;
+      margin-top: 50px;
+    }
+  }
+}
