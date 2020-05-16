@@ -27,9 +27,11 @@
   <div class="admin__main__title">
     New Post
   </div>
-  <form class="admin__main__form">
-    <input type="file">
-    <textarea rows="10" cols="40" class="admin__main__form--textArea">メッセージを入力してください</textarea>
+  <form method="POST" action="{{route("post.store")}}" class="admin__main__form">
+    @csrf
+    <input type="file" name="image">
+    <input type="text" name="title" class="admin__main__form--title" placeholder="タイトルを入力してください">
+    <textarea rows="10" cols="40"  name="description" class="admin__main__form--textArea" placeholder="メッセージを入力してください"></textarea>
     <input type="submit" value="Send" class="admin__main__form--submit">
   </form>
 </main>

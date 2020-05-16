@@ -33,8 +33,17 @@
   &__form{
     text-align: center;
 
+    &--title{
+      border: solid 1px #000;
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
     &--textArea{
       border: solid 1px #000;
+      width: 90%;
+      padding: 10px;
     }
 
     &--submit{
