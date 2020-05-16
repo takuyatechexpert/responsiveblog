@@ -17406,8 +17406,17 @@ footer {
   text-align: center;
 }
 
+.admin__main__form--title {
+  border: solid 1px #000;
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
 .admin__main__form--textArea {
   border: solid 1px #000;
+  width: 90%;
+  padding: 10px;
 }
 
 .admin__main__form--submit {
