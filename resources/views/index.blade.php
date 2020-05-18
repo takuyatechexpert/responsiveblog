@@ -40,7 +40,11 @@
         @foreach ($posts as $post)
           <h2>{{$post->title}}</h2>
           <div class="contents__item__box">
-            <img src="{{ asset('/images/sample.jpg') }}" alt="イメージ写真">
+            {{-- public/imageに格納したアプリに必要な画像を取り出す方法 --}}
+            {{-- <img src="{{ asset('/images/sample.jpg') }}" alt="イメージ写真"> --}}
+
+            {{-- 投稿した画像を取り出す方法 storage/publicにアクセスしている --}}
+            <img src="{{ asset('storage/' . $post->image) }}" alt="投稿画像">
             <p>
               {{$post->description}}
               
