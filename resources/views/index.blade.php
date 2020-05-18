@@ -37,14 +37,16 @@
     <main>
       {{-- article --}}
       <article class="contents__item">
-        <h2>title</h2>
-        <div class="contents__item__box">
-          <img src="{{ asset('/images/sample.jpg') }}" alt="イメージ写真">
-          <p>
-            article
-            testmessage
-          </p><tr></tr>
-        </div>
+        @foreach ($posts as $post)
+          <h2>{{$post->title}}</h2>
+          <div class="contents__item__box">
+            <img src="{{ asset('/images/sample.jpg') }}" alt="イメージ写真">
+            <p>
+              {{$post->description}}
+              
+            </p>
+          </div>
+        @endforeach
       </article>
     </main>
     
