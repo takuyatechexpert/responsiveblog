@@ -15,7 +15,8 @@ class TopPageController extends Controller
     public function index()
     {
         //
-        $posts = Post::all();
+        $posts = Post::orderBy('updated_at', 'desc')->get();
+
 
         return view('index', compact('posts'));
     }

@@ -65,34 +65,14 @@
         </ul>
 
         <ul class="info__guide">
-          <li>
-            <img src="{{ asset('/images/sample.jpg') }}" alt="イメージ写真">
-            <div class="info__guide__text">
-              <p>guide1</p>
-              <p>guide1</p>
-            </div>
-          </li>
-          <li>
-            <img src="{{ asset('/images/sample.jpg') }}" alt="イメージ写真">
-            <div class="info__guide__text">
-              <p>guide1</p>
-              <p>guide1</p>
-            </div>
-          </li>
-          <li>
-            <img src="{{ asset('/images/sample.jpg') }}" alt="イメージ写真">
-            <div class="info__guide__text">
-              <p>guide1</p>
-              <p>guide1</p>
-            </div>
-          </li>
-          <li>
-            <img src="{{ asset('/images/sample.jpg') }}" alt="イメージ写真">
-            <div class="info__guide__text">
-              <p>guide1</p>
-              <p>guide1</p>
-            </div>
-          </li>
+          @foreach ($posts as $post)
+            <li>
+              <img src="{{ asset('storage/' . $post->image) }}" alt="投稿画像">
+              <div class="info__guide__text">
+                <p>{{$post->title}}</p>
+              </div>
+            </li>
+          @endforeach
         </ul>
       </section>
       
