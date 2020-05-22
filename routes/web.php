@@ -13,9 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', 'TopPageController@index')->name('topPage.index');
-// Route::get('/', function () {
-//     return view('index');
-// });
+
+Route::get('show/{id}','PostController@show')->name('post.show');
 
 Auth::routes();
 
@@ -65,5 +64,4 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function() {
 Route::group(['prefix' => 'post', 'middleware' => 'auth:admin'], function() {
     Route::post('store','PostController@store')->name('post.store');
     // railsではcreate
-
 });
