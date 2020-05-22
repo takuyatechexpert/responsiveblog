@@ -15,10 +15,16 @@
 <nav class="admin__nav">
   <ul>
     <li>
-      <a href="#">New Post</a>
+      <a href="{{ route('admin.home')}}">New Post</a>
     </li>
     <li>
-      <a href="#">News</a>
+      <a href="#">News Post</a>
+    </li>
+    <li>
+      <a href="#">Posts List</a>
+    </li>
+    <li>
+      <a href="#">News List</a>
     </li>
   </ul>
 </nav>
