@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\News;
 use Illuminate\Http\Request;
 
 class NewsController extends Controller
@@ -36,6 +37,14 @@ class NewsController extends Controller
     public function store(Request $request)
     {
         //
+        $news = new News;
+
+        $news->title = $request->input('title');
+        $news->description = $request->input('description');
+
+        $news->save();
+
+        return redirect() -> route('news.create');
 
     }
 
