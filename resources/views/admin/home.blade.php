@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.app_admin')
 
 @section('content')
-<header class="admin__header">
+{{-- <header class="admin__header">
   <ul class="admin__header__list">
     <li class="admin__header__list--title">
     Dash Board
@@ -27,7 +27,7 @@
       <a href="#">News List</a>
     </li>
   </ul>
-</nav>
+</nav> --}}
 
 <main class="admin__main">
   <div class="admin__main__title">
