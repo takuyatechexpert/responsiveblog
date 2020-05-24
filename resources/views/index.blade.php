@@ -96,18 +96,14 @@
     {{-- news --}}
     <section class="news">
       <h2>News</h2>
-      <article class="news__item">
-        <h3>title</h3>
-        <p>news text</p>
-      </article>
-      <article class="news__item">
-        <h3>title</h3>
-        <p>news text</p>
-      </article>
-      <article class="news__item">
-        <h3>title</h3>
-        <p>news text</p>
-      </article>
+      @foreach($news as $new)
+        <article class="news__item">
+          <h3>{{ $new->title }}</h3>
+          <p>{{ $new->updated_at->format('Y/m/d G:i') }}</p>
+          {{-- 日付表示を変更している --}}
+          <p>{{ $new->description }}</p>
+        </article>
+      @endforeach
     </section>
   </div>
   

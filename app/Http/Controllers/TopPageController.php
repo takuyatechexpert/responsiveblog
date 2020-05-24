@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\News;
 use Illuminate\Http\Request;
 
 class TopPageController extends Controller
@@ -16,9 +17,9 @@ class TopPageController extends Controller
     {
         //
         $posts = Post::orderBy('updated_at', 'desc')->get();
+        $news = News::orderBy('updated_at', 'desc')->get();
 
-
-        return view('index', compact('posts'));
+        return view('index', compact('posts', 'news'));
     }
 
     /**
