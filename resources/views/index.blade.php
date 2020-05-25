@@ -85,15 +85,16 @@
       <section class="topics">
         <h3>Topics</h3>
         <ul class="topics__diary">
-          <li>
-            更新日
-          </li>
-          <li>
-            更新日
-          </li>
-          <li>
-            更新日
-          </li>
+          @foreach($posts as $post)
+            @if ($loop->index < 8)
+              <li>
+                <a href="#">
+                  {{ $post->title }}
+                  {{ $post->updated_at->format('Y/m/d') }}
+                </a>
+              </li>
+            @endif
+          @endforeach
         </ul>
       </section>
     </aside>
