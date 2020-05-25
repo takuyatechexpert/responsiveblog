@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Responsivelog')
+
 @section('content')
 {{-- container --}}
 <div class="container">

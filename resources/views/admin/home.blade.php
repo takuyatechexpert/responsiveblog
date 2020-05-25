@@ -1,33 +1,9 @@
 @extends('layouts.app_admin')
 
-@section('content')
-{{-- <header class="admin__header">
-  <ul class="admin__header__list">
-    <li class="admin__header__list--title">
-    Dash Board
-    </li>
-    <li class="admin__header__list--user">
-      user name
-    </li>
-  </ul>
-</header>
+@section('title', '管理者ページ')
 
-<nav class="admin__nav">
-  <ul>
-    <li>
-      <a href="{{ route('admin.home')}}">New Post</a>
-    </li>
-    <li>
-      <a href="#">News Post</a>
-    </li>
-    <li>
-      <a href="#">Posts List</a>
-    </li>
-    <li>
-      <a href="#">News List</a>
-    </li>
-  </ul>
-</nav> --}}
+
+@section('content')
 
 <main class="admin__main">
   <div class="admin__main__title">
@@ -38,7 +14,7 @@
     これがないと画像がアップロードできない --}}
     @csrf
     {{-- fileのnameがcontroller側で重要になる --}}
-    <input type="file" name="file">
+    <input type="file" name="file" class="admin__main__form--file">
     <input type="text" name="title" class="admin__main__form--title" placeholder="タイトルを入力してください">
     <textarea rows="10" cols="40"  name="description" class="admin__main__form--textArea" placeholder="メッセージを入力してください"></textarea>
     <input type="submit" value="Send" class="admin__main__form--submit">

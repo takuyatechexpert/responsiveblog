@@ -17406,17 +17406,22 @@ footer {
   text-align: center;
 }
 
+.admin__main__form--file {
+  width: 90%;
+}
+
 .admin__main__form--title {
   border: solid 1px #000;
   width: 90%;
   padding: 10px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
 }
 
 .admin__main__form--textArea {
   border: solid 1px #000;
   width: 90%;
   padding: 10px;
+  margin: 0 auto;
 }
 
 .admin__main__form--submit {
@@ -17428,5 +17433,12 @@ footer {
   letter-spacing: 5px;
   padding: 5px 30px;
   margin-top: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .admin__main {
+    max-width: 960px;
+    margin: 0 auto;
+  }
 }
 
