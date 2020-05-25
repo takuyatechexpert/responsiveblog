@@ -18,6 +18,7 @@ class TopPageController extends Controller
         //
         $posts = Post::orderBy('updated_at', 'desc')->get();
         $news = News::orderBy('updated_at', 'desc')->get();
+        $topics = Post::orderBy('updated_at', 'desc')->get();
 
         return view('index', compact('posts', 'news'));
     }
