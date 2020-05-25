@@ -1,4 +1,6 @@
-@extends('layouts.app_admin');
+@extends('layouts.app_admin')
+
+@section('title', '管理ページ - News Post')
 
 @section('content')
 <main class="admin__main">
