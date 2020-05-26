@@ -3,6 +3,9 @@
 @section('title', '管理ページ - News Post')
 
 @section('content')
+
+@include('admin.header')
+
 <main class="admin__main">
   <div class="admin__main__title">
     News Post
