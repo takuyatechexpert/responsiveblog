@@ -21,7 +21,7 @@
       <a href="{{ route('news.create')}}">News Post</a>
     </li>
     <li>
-      <a href="#">Posts List</a>
+      <a href="{{ route('post.index')}}">Posts List</a>
     </li>
     <li>
       <a href="#">News List</a>
