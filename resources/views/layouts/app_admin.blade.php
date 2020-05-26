@@ -34,7 +34,7 @@
           Dash Board
           </li>
           <li class="admin__header__list--user">
-            user name
+            {{ Auth::user()->name }}
           </li>
         </ul>
       </header>

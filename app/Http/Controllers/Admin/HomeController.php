@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-
+use Auth;
+// use App\Models\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller; //追加
 class HomeController extends Controller
@@ -23,6 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('admin.home');
+        $admin = Auth::getUser();
+        return view('admin.home', compact('admin'));
     }
 }
