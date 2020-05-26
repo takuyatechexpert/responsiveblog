@@ -24,7 +24,7 @@
       <a href="{{ route('post.index')}}">Posts List</a>
     </li>
     <li>
-      <a href="#">News List</a>
+      <a href="{{ route('news.index')}}">News List</a>
     </li>
   </ul>
 </nav>

@@ -68,6 +68,7 @@ Route::group(['prefix' => 'post', 'middleware' => 'auth:admin'], function() {
 });
 
 Route::group(['prefix' => 'news', 'middleware' => 'auth:admin'], function() {
+    Route::get('index', 'NewsController@index')->name('news.index');
     Route::get('create','NewsController@create')->name('news.create');
     Route::post('store', 'NewsController@store')->name('news.store');
     // railsではcreate
