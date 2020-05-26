@@ -70,4 +70,10 @@ class PostController extends Controller
         return view('post/show', compact('post'));
     }
 
+    public function index()
+    {
+        $posts = Post::orderBy('updated_at', 'desc')->get();
+
+        return view('admin.post.index', compact('posts'));
+    }
 }
