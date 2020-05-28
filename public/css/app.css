@@ -17392,6 +17392,10 @@ footer {
   padding-top: 15px;
 }
 
+.admin__header__list--user--link {
+  color: #000;
+}
+
 .admin__nav a {
   color: #fff;
 }
