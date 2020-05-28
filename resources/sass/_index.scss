@@ -7,27 +7,32 @@ body{
   color: #000;
 }
 
-// ------ header ------
-header{
-  text-align: center;
-
-  h1{
-    width: 90%;
-    margin: 0 auto;
-    height: 46px;
-    font-size: 2rem;
-  }
-
-  img{
-    width: 100%;
-    max-width: 960px;
-  }
+// -----モバイルサイズで右側の余白を消す為-----
+.wrap {
+  overflow: hidden;
 }
 
-// ------ global nav ------
-nav{
+  // ------ header ------
+  header{
+    text-align: center;
+    
+    h1{
+      width: 90%;
+      margin: 0 auto;
+      height: 46px;
+      font-size: 2rem;
+    }
+    
+    img{
+      width: 100%;
+      max-width: 960px;
+    }
+  }
   
-  ul{
+  // ------ global nav ------
+  nav{
+    
+    ul{
     background: #808080;
     color: #fff;
     font-size: 1.1rem;
@@ -37,7 +42,7 @@ nav{
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-
+    
     li{
       text-align: center;
       width: 50%;
@@ -45,7 +50,7 @@ nav{
     }
     li:nth-child(odd){
       border-right: solid 1px #e4e4e4;
-
+      
     }
   }
 }
@@ -54,7 +59,7 @@ nav{
 
 .contents{
   margin-top: 30px;
-
+  
   // ------ main ------
   main{
     width: 100%;
@@ -75,23 +80,23 @@ nav{
       .contents__item__box{
         
         img{
-        display: block;
-        width: 95%;
-        padding: 2px;
-        border: solid 1px #000;
-        border-radius: 2px;
-        margin: 0 auto 20px;
+          display: block;
+          width: 95%;
+          padding: 2px;
+          border: solid 1px #000;
+          border-radius: 2px;
+          margin: 0 auto 20px;
+        }
+        
+        p{
+          width: 95%;
+          height: 200px;
+          margin: 0 auto;
+        }
       }
       
-      p{
-        width: 95%;
-        height: 200px;
-        margin: 0 auto;
-      }
     }
-    
   }
-}
 }
 
 
@@ -99,13 +104,13 @@ nav{
 aside{
   width: 300px;
   margin: 20px auto 60px;
-
+  
   // ------ information ------
   .info{
     border: solid 1px #808080;
     border-radius: 7px;
     // height: 100%;
-
+    
     &__sns{
       display: flex;
       align-items: center;
@@ -115,20 +120,20 @@ aside{
         margin: 0 5px;
       }
     }
-
+    
     &__guide{
       margin: 10px 5px 0;
-
+      
       li{
         height: 65px;
         padding: 10px 0 5px;
         border-top: solid 1px #808080;
         display: flex;
-
+        
         img{
           width: 80px;
         }
-
+        
         .info__guide__text{
           margin-left: 10px;
         }
@@ -138,16 +143,16 @@ aside{
   
   // ------ topics ------
   .topics{
-
+    
     h3{
       font-size: 1.5rem;
       margin: 30px 0 20px;
       background: linear-gradient(#fff 50%, #808080);
-
+      
     }
-
+    
     &__diary{
-
+      
       li{
         margin: 0 0 15px 5px;
         padding-bottom: 5px;
@@ -161,16 +166,16 @@ aside{
 .news{
   width: 93%;
   margin: 0 auto;
-
+  
   h2{
     font-size: 1.5rem;
     margin-bottom: 30px;
     background: linear-gradient(#fff 50%, #808080);
   }
-
+  
   &__item{
     margin-bottom: 40px;
-
+    
     h3{
       font-size: 0.8rem;
       margin-bottom: 10px;
@@ -195,13 +200,13 @@ footer{
 
 // ****タブレット用****
 @media screen and (min-width: 768px){
-
-// ------ header ------
+  
+  // ------ header ------
   header{
     .header__top{
       display: flex;
       justify-content: space-between;
-
+      
       h1{
         text-align: left;
         margin: 0;
@@ -210,22 +215,22 @@ footer{
       }
       
       .s_nav{
-
+        
         li{
           padding-top: 40px;
         }
       }
     }
     
-      img{
+    img{
       width: 100%;
     }
   }
-
-// ------ global nav ------
+  
+  // ------ global nav ------
   nav{
     margin: 10px auto 15px;
-
+    
     ul{
       margin: 0 auto;
       display: flex;
@@ -240,7 +245,7 @@ footer{
         border-right: solid 0.5px #e4e4e4;
       }
     }
-  
+    
   }
   
   // ------ contents ------
@@ -263,18 +268,18 @@ footer{
       }
     }
   }
-
-// ------ aside ------
+  
+  // ------ aside ------
   aside{
     width: 80%;
     display: flex;
     justify-content: space-around;
-
-// ------ information ------
+    
+    // ------ information ------
     .info{
-width: 300px;
+      width: 300px;
     }
-// ------ topics ------
+    // ------ topics ------
     .topics{
       // height: 100%;
       width: 300px;
@@ -282,7 +287,7 @@ width: 300px;
         margin-top: 0;
       }
     }
-
+    
   }
 }
 
@@ -293,17 +298,17 @@ width: 300px;
     max-width: 960px;
     margin: 0 auto;
   }
-
+  
   .contents{
     max-width: 960px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-
+    
     main{
       width: 64%;
     }
-
+    
     aside{
       width: 30%;
       display: block;
@@ -314,10 +319,10 @@ width: 300px;
       
       .info{
         width: 300px;
-
-
+        
+        
       }
-
+      
       .topics{
         width: 300px;
         margin: 10px;
