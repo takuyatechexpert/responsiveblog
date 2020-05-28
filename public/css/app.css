@@ -17101,6 +17101,10 @@ body {
   color: #000;
 }
 
+.wrap {
+  overflow: hidden;
+}
+
 header {
   text-align: center;
 }
