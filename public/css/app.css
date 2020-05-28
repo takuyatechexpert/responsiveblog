@@ -17101,10 +17101,6 @@ body {
   color: #000;
 }
 
-.wrap {
-  overflow: hidden;
-}
-
 header {
   text-align: center;
 }
@@ -17148,7 +17144,6 @@ nav ul li:nth-child(odd) {
 }
 
 .contents main {
-  width: 100%;
   margin-top: 20px;
   margin-left: 5px;
 }

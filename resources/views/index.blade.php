@@ -4,7 +4,6 @@
 
 @section('content')
 {{-- container --}}
-<div class="wrap">
   <div class="container">
   </div>
     {{-- header --}}
@@ -122,5 +121,4 @@
   <footer>
     Copyright &copy; 2020 ResponsiveBlog All Rights Reserved.
   </footer>
-</div>
 @endsection
