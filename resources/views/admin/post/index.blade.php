@@ -12,12 +12,39 @@
   <div class="admin__main__title">
     Posts List
   </div>
-  <div>
-    @foreach($posts as $post)
-    {{ $post->title }}
-    <img src="{{ asset('storage/' . $post->image) }}" alt="投稿画像">
-    {{ $post->description }}
-    @endforeach
-  </div>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Image</th>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Created_at</th>
+        <th scope="col">Updated_at</th>
+      </tr>
+    </thead>
+    <tbody>
+      @foreach($posts as $post)
+      <tr>
+        <td>
+          <img  src="{{ asset('storage/' . $post->image) }}" class="admin__main--img" alt="投稿画像">
+        </td>
+        <td>
+          <a href="#" class="admin__main--img--link">
+            {{ mb_strimwidth($post->title, 0, 30,'...') }}
+          </a>
+        </td>
+        <td>
+          {{ mb_strimwidth($post->description, 0, 40, '...') }}
+        </td>
+        <td>
+          {{ $post->created_at->format('Y/m/d G:i') }}
+        </td>
+        <td>
+          {{ $post->updated_at->format('Y/m/d G:i') }}
+        </td>
+      </tr>
+      @endforeach
+    </tbody>
+  </table>
 </main>
 @endsection
