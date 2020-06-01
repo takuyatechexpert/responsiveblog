@@ -17445,3 +17445,11 @@ footer {
   }
 }
 
+.admin__main--img {
+  width: 80px;
+}
+
+.admin__main--link {
+  font-weight: bold;
+}
+
