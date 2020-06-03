@@ -62,9 +62,11 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function() {
 });
 
 Route::group(['prefix' => 'post', 'middleware' => 'auth:admin'], function() {
+    // railsではcreate
     Route::post('store','PostController@store')->name('post.store');
     Route::get('index', 'PostController@index')->name('post.index');
-    // railsではcreate
+    Route::get('edit/{id}', 'PostController@edit')->name('post.edit');
+    Route::post('update/{id}', 'PostController@update')->name('post.update');
 });
 
 Route::group(['prefix' => 'news', 'middleware' => 'auth:admin'], function() {
