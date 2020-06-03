@@ -12,6 +12,12 @@
   <div class="admin__main__title">
     Posts List
   </div>
+
+  {{--成功時のメッセージ--}}
+  @if (session('success'))
+    <div class="alert alert-success">{{ session('success') }}</div>
+  @endif
+
   <table>
     <thead>
       <tr>
@@ -29,7 +35,7 @@
           <img  src="{{ asset('storage/' . $post->image) }}" class="admin__main--img" alt="投稿画像">
         </td>
         <td>
-          <a href="#" class="admin__main--img--link">
+        <a href="{{route('post.edit', ['id'=>$post->id])}}" class="admin__main--img--link">
             {{ mb_strimwidth($post->title, 0, 30,'...') }}
           </a>
         </td>
