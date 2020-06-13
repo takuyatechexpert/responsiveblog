@@ -5,7 +5,7 @@
 
 @section('content')
 
-@include('header')
+@include('admin.header')
 
 <main class="admin__main">
   <div class="admin__main__title">
