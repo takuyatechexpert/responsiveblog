@@ -26,7 +26,7 @@
       @foreach($news as $new)
       <tr>
         <td>
-        <a href="#" class="admin__main--img--link">
+        <a href="{{route('news.edit', ['id'=> $new->id])}}" class="admin__main--img--link">
             {{ mb_strimwidth($new->title, 0, 30,'...') }}
           </a>
         </td>
