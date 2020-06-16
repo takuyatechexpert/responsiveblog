@@ -86,6 +86,15 @@ class NewsController extends Controller
     public function update(Request $request, $id)
     {
         //
+
+        $news = News::find($id);
+
+        $news->title = $request->input('title');
+        $news->description = $request->input('description');
+
+        $news->update();
+
+        return redirect() -> route('news.index');
     }
 
     /**

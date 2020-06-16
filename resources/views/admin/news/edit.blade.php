@@ -10,7 +10,7 @@
   <div class="admin__main__title">
     News Edit
   </div>
-  <form method="POST" action="#" class="admin__main__form" enctype="multipart/form-data">
+  <form method="POST" action="{{route('news.update', ['id'=> $news->id])}}" class="admin__main__form" enctype="multipart/form-data">
     {{-- enctype="multipart/form-data"の記述が重要だった
     これがないと画像がアップロードできない --}}
     @csrf
