@@ -79,4 +79,5 @@ Route::group(['prefix' => 'news', 'middleware' => 'auth:admin'], function() {
     // railsではcreate
     Route::get('edit/{id}', 'NewsController@edit')->name('news.edit');
     Route::post('update/{id}', 'NewsController@update')->name('news.update');
+    Route::post('destroy/{id}', 'NewsController@destroy')->name('news.destroy');
 });
