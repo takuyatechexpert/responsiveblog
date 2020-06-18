@@ -17313,6 +17313,10 @@ footer {
     width: 40%;
   }
 
+  .contents main .contents__item .contents__item--text {
+    margin-top: 20px;
+  }
+
   aside {
     width: 80%;
     display: flex;
