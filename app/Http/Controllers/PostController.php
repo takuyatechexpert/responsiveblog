@@ -64,7 +64,7 @@ class PostController extends Controller
         //
         $post = Post::findOrFail($id);
 
-        return view('post/show', compact('post'));
+        return view('admin.post.show', compact('post'));
     }
 
     public function index()

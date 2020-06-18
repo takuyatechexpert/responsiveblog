@@ -41,18 +41,20 @@
           @foreach ($posts as $post)
             @if ($loop->index < 3)
             {{-- loop処理を使うとforeachでkeyを指定しなくともindexが取れる --}}
-              <h2>{{$post->title}}</h2>
-              <div class="contents__item__box">
-                {{-- public/imageに格納したアプリに必要な画像を取り出す方法 --}}
-                {{-- <img src="{{ asset('/images/sample.jpg') }}" alt="イメージ写真"> --}}
-                
-                {{-- 投稿した画像を取り出す方法 storage/publicにアクセスしている --}}
-                <img src="{{ asset('storage/' . $post->image) }}" alt="投稿画像">
-                <p>
-                  {{$post->description}}
+              <a href="{{route('post.show', ['id'=> $post->id])}}">
+                <h2>{{$post->title}}</h2>
+                <div class="contents__item__box">
+                  {{-- public/imageに格納したアプリに必要な画像を取り出す方法 --}}
+                  {{-- <img src="{{ asset('/images/sample.jpg') }}" alt="イメージ写真"> --}}
                   
-                </p>
-              </div>
+                  {{-- 投稿した画像を取り出す方法 storage/publicにアクセスしている --}}
+                  <img src="{{ asset('storage/' . $post->image) }}" alt="投稿画像">
+                  <p>
+                    {{$post->description}}
+                    
+                  </p>
+                </div>
+              </a>
             @endif
           @endforeach
         </article>
