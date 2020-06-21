@@ -15,4 +15,9 @@ class Post extends Model
     protected $fillable = [
         'image', 'title', 'description',
     ];
+
+    Public function genre()
+    {
+        return  $this->belongsTo('App\Models\Genre');
+    }
 }

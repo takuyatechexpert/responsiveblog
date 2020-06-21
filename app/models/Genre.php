@@ -11,5 +11,8 @@ class Genre extends Model
         'title',
     ];
 
-    
+    Public function posts()
+    {
+        return  $this->hasMany('App\Models\Post');
+    }
 }
