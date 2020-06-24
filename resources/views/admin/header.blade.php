@@ -41,5 +41,8 @@
     <li>
       <a href="{{ route('news.index')}}">News List</a>
     </li>
+    <li>
+      <a href="{{ route('genre.create')}}">Add Genre</a>
+    </li>
   </ul>
 </nav>

@@ -64,6 +64,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function() {
     Route::post('register', 'Admin\RegisterController@register');
 });
 
+// 新規投稿の為のルーティング
 Route::group(['prefix' => 'post', 'middleware' => 'auth:admin'], function() {
     // railsではcreate
     Route::post('store','PostController@store')->name('post.store');
@@ -72,6 +73,7 @@ Route::group(['prefix' => 'post', 'middleware' => 'auth:admin'], function() {
     Route::post('update/{id}', 'PostController@update')->name('post.update');
 });
 
+// NEWS追加の為のルーティング
 Route::group(['prefix' => 'news', 'middleware' => 'auth:admin'], function() {
     Route::get('index', 'NewsController@index')->name('news.index');
     Route::get('create','NewsController@create')->name('news.create');
@@ -80,4 +82,10 @@ Route::group(['prefix' => 'news', 'middleware' => 'auth:admin'], function() {
     Route::get('edit/{id}', 'NewsController@edit')->name('news.edit');
     Route::post('update/{id}', 'NewsController@update')->name('news.update');
     Route::post('destroy/{id}', 'NewsController@destroy')->name('news.destroy');
+});
+
+// ジャンル追加のルーティング
+Route::group(['prefix' => 'genre', 'middleware' => 'auth:admin'], function() {
+    Route::get('create','GenreController@create')->name('genre.create');
+    
 });
